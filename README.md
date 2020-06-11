@@ -6,10 +6,10 @@ This is a [web application](http://tz000.pythonanywhere.com) created with Flask 
 [<img src='img.png'>](http://tz000.pythonanywhere.com)
 
 # Modeling
-The data processing and modeling part is in "model_part" folder. [[go]](model_part/create_model.py) The model is trained with stochastic gradient descent so that it can be retrained when getting the user's feedback. The model is then saved as a .pkl file and put in the web application.
+The data processing and modeling part is in "model_part" folder. [[go]](model_part/create_model.py) The model is trained with stochastic gradient descent so that it can be updated when getting the user's feedback. The model is then saved as a .pkl file and put in the web application.
 
 # Web part
-The web application is in ["web_part" folder](web_part). A SQLite is used to store the the review and feedback (correct classification or wrong classification) to update the model.
+The web application is in ["web_part" folder](web_part). A SQLite is used to store the the reviews and feedbacks (correct classification or wrong classification) from users to update the model.
 
 # Data 
 The data this model is trained on is [Large Movie Review Dataset](https://ai.stanford.edu/~amaas/data/sentiment/). (It is too large, not going to upload)
