@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  </head>
+  <body>
+<h2>Please enter your movie review:</h2>
+<h3>What do you think of the movie Titanic? (This is just an inspiring question. You can enter a review of any movie.)</h3>
+
+    {% from "_formhelpers.html" import render_field %}
+  <form class="" action="/results" method="post">
+    <dl class="">
+      {{ render_field(form.moviereview, cols='30', rows='10') }}
+    </dl>
+    <div class="">
+      <input type=submit name="submit_btn" value="Submit review">
+    </div>
+  </form>
+  </body>
+</html>
